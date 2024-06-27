@@ -8,7 +8,7 @@
 
 using namespace std;
 
-namespace exceptions
+namespace myexceptions
 {
     class toalg2 {};
     class toalg3 {};
@@ -76,7 +76,7 @@ namespace Task2 {
         double T(double x, string filename)
         {
             ifstream fs(filename);
-            if (!fs) throw exceptions::toalg4();
+            if (!fs) throw myexceptions::toalg4();
             if (filename == file1 || filename == file2)
             {
                 float Xp, Tp, Up;
@@ -135,7 +135,7 @@ namespace Task2 {
                 }
                 fs.close();
             }
-            throw exceptions::toalg4();
+            throw myexceptions::toalg4();
         }
 
         double T(double x)
@@ -152,13 +152,13 @@ namespace Task2 {
             {
                 return T(-1 / x, file3);
             }
-            throw exceptions::toalg4();
+            throw myexceptions::toalg4();
         }
 
         double U(double x, string filename)
         {
             ifstream fs(filename);
-            if (!fs) throw exceptions::toalg4();
+            if (!fs) throw myexceptions::toalg4();
             if (filename == file1 || filename == file2)
             {
                 double Xp, Tp, Up;
@@ -217,7 +217,7 @@ namespace Task2 {
                 }
                 fs.close();
             }
-            throw exceptions::toalg4();
+            throw myexceptions::toalg4();
         }
 
         double U(double x)
@@ -234,7 +234,7 @@ namespace Task2 {
             {
                 return U(1 / x, file3);
             }
-            throw exceptions::toalg4();
+            throw myexceptions::toalg4();
         }
 
         double srz(double x, double y, double z)
@@ -251,8 +251,8 @@ namespace Task2 {
             if (z <= y && x * x + z * y > 0)
                 return y + srz(x, y, z) * sqrt(x * x + z * y);
             if (z * z + x * y <= 0)
-                throw exceptions::toalg2();
-            throw exceptions::toalg3();
+                throw myexceptions::toalg2();
+            throw myexceptions::toalg3();
         }
 
         double qrz(double x, double y)
@@ -274,11 +274,11 @@ namespace Task2 {
             try {
                 return 0.1389 * rrz(x, y, y) + 1.8389 * rrz(x - y, z, y);
             }
-            catch (exceptions::toalg2)
+            catch (myexceptions::toalg2)
             {
                 return 0.1389 * alg2::rrz(x, y, y) + 1.8389 * alg2::rrz(x - y, z, y);
             }
-            catch (exceptions::toalg3)
+            catch (myexceptions::toalg3)
             {
                 return 0.1389 * alg3::rrz(x, y, y) + 1.8389 * alg3::rrz(x - y, z, y);
             }
@@ -307,7 +307,7 @@ int main()
     try {
         cout << Task2::alg1::fun(x, y, z) << endl;
     }
-    catch (exceptions::toalg4) {
+    catch (myexceptions::toalg4) {
         cout << "Algorithm changed to 4" << endl;
         cout << Task2::alg4::fun(x, y, z);
     }
