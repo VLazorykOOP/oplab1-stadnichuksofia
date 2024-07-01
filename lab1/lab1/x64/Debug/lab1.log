@@ -1,0 +1,15 @@
+﻿  lab1.cpp
+C:\Users\Anatoha\github-classroom\Modeluvann\lab1\lab1\lab1.cpp(36,40): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+C:\Users\Anatoha\github-classroom\Modeluvann\lab1\lab1\lab1.cpp(63,25): warning C4101: 'e': unreferenced local variable
+C:\Users\Anatoha\github-classroom\Modeluvann\lab1\lab1\lab1.cpp(68,40): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+C:\Users\Anatoha\github-classroom\Modeluvann\lab1\lab1\lab1.cpp(97,25): warning C4101: 'e': unreferenced local variable
+C:\Users\Anatoha\github-classroom\Modeluvann\lab1\lab1\lab1.cpp(102,51): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+C:\Users\Anatoha\github-classroom\Modeluvann\lab1\lab1\lab1.cpp(121,50): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+C:\Users\Anatoha\github-classroom\Modeluvann\lab1\lab1\lab1.cpp(153,73): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+C:\Users\Anatoha\github-classroom\Modeluvann\lab1\lab1\lab1.cpp(158,23): warning C4101: 'e': unreferenced local variable
+C:\Users\Anatoha\github-classroom\Modeluvann\lab1\lab1\lab1.cpp(161,25): warning C4101: 'e': unreferenced local variable
+C:\Users\Anatoha\github-classroom\Modeluvann\lab1\lab1\lab1.cpp(34,1): warning C4715: 'MyDetermineFile': not all control paths return a value
+C:\Users\Anatoha\github-classroom\Modeluvann\lab1\lab1\lab1.cpp(119,1): warning C4715: 'MyGold1': not all control paths return a value
+  lab1.vcxproj -> C:\Users\Anatoha\github-classroom\Modeluvann\lab1\x64\Debug\lab1.exe
+  'pwsh.exe' is not recognized as an internal or external command,
+  operable program or batch file.
